@@ -251,6 +251,7 @@ int delete(FILE *db_file, char *name) {
       free(del);
     }
   }
+  }
   write_all_entries(base);
   free_entries(base);
   return deleted;
